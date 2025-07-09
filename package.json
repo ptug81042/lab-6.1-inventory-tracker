@@ -1,0 +1,24 @@
+{
+  "name": "lab-6.1-inventory-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptug81042/lab-6.1-inventory-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptug81042/lab-6.1-inventory-tracker/issues"
+  },
+  "homepage": "https://github.com/ptug81042/lab-6.1-inventory-tracker#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3"
+  }
+}
