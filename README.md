@@ -1,21 +1,25 @@
 # Lab 6.1: Inventory Tracker
 
-## Critical Thinking
+## Reflection & Critical Thinking
 
-After completing the lab, consider the following questions:
+Completing this lab provided valuable hands-on experience with TypeScript’s object-oriented features and highlighted the importance of thoughtful software design. Consider the following reflective questions and insights:
 
 1. **How does TypeScript enforce type safety in this object-oriented program?**
 
-   TypeScript enforces type safety by requiring explicit type annotations for class properties, method parameters, and return types. This ensures that only the correct types of values can be assigned or passed, reducing runtime errors and making the code more predictable and maintainable.
+   Working with TypeScript, I noticed how explicit type annotations for class properties, method parameters, and return types act as a safety net. This not only prevents accidental type mismatches but also makes the code more self-documenting and easier to maintain. TypeScript’s compile-time checks caught potential issues early, which would have been harder to debug at runtime in plain JavaScript.
 
 2. **How did inheritance reduce code duplication for PhysicalProduct and DigitalProduct?**
 
-   Inheritance allowed both `PhysicalProduct` and `DigitalProduct` to share common properties and methods defined in the `Product` base class. This eliminated the need to rewrite shared logic, such as the constructor and display methods, in each subclass, making the codebase more concise and easier to maintain.
+   By leveraging inheritance, I was able to define shared logic—such as constructors and display methods—in the `Product` base class. Both `PhysicalProduct` and `DigitalProduct` inherited these features, which meant I could focus on their unique behaviors without repeating code. This made the codebase cleaner and changes to shared logic easier to propagate.
 
 3. **What are the benefits of using encapsulation and access modifiers (public, private, protected) in this context?**
 
-   Encapsulation helps group related data and behaviors within classes, hiding internal implementation details and exposing only what is necessary. Using access modifiers like `public`, `private`, and `protected` controls how properties and methods are accessed, which helps prevent unintended interactions and keeps the codebase robust and secure.
+   Encapsulation allowed me to group related data and behaviors within each class, keeping implementation details hidden and exposing only what’s necessary. Using access modifiers like `public`, `private`, and `protected` helped control how properties and methods are accessed, reducing the risk of unintended side effects and making the code more robust and secure.
 
 4. **If you had to add a new type of product (e.g., a SubscriptionProduct), how would polymorphism make this extension straightforward?**
 
-   Polymorphism allows new product types to extend the `Product` base class and override methods as needed. The rest of the program can interact with all products through the shared `Product` interface, making it easy to add new product types like `SubscriptionProduct` without changing the code that processes products in general.
+   Polymorphism was a powerful concept in this lab. By interacting with products through a shared interface or base class, I could easily introduce new product types like `SubscriptionProduct`. As long as the new class adhered to the expected interface, the rest of the system would work seamlessly, demonstrating how polymorphism supports scalability and flexibility in software design.
+
+---
+
+Reflecting on these questions, I see how TypeScript’s features and object-oriented principles work together to create code that is not only functional but also maintainable and extensible. This lab reinforced the value of planning class hierarchies and thinking ahead about how new requirements might be integrated in the future.
