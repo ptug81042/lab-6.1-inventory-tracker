@@ -19,23 +19,3 @@ After completing the lab, consider the following questions:
 4. **If you had to add a new type of product (e.g., a SubscriptionProduct), how would polymorphism make this extension straightforward?**
 
    Polymorphism allows new product types to extend the `Product` base class and override methods as needed. The rest of the program can interact with all products through the shared `Product` interface, making it easy to add new product types like `SubscriptionProduct` without changing the code that processes products in general.
-
----
-
-## Challenge
-
-Looking to further personalize and enhance your inventory tracker? Try these unique challenges:
-
-1. **DiscountableProduct Interface**
-
-   Design a `DiscountableProduct` interface that requires an `applyDiscount()` method. Implement this interface in one of your product classes (such as `PhysicalProduct`) to allow discounts to be applied dynamically and safely, leveraging TypeScript's type system.
-
-2. **Product Sorting Utility**
-
-   Create a utility module that can sort an array of products by price (ascending or descending) or by name (alphabetically). This will help users quickly organize and browse the inventory, and demonstrates how to write flexible, reusable code.
-
-3. **Bulk Discount Feature**
-
-   Add logic to your inventory system so that physical products receive a bulk discount when purchased in large quantities or when the total weight exceeds a certain threshold. This feature can help simulate real-world pricing strategies for bulk orders and encourages you to think about business logic in code.
-
-Feel free to experiment and adapt these ideas to fit your
