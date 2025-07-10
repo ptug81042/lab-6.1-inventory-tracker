@@ -1,7 +1,7 @@
 import { PhysicalProduct } from "./models/PhysicalProduct";
 import { DigitalProduct } from "./models/DigitalProduct";
 import { calculateTax } from "./utils/taxCalculator";
-import { sortProducts } from "./utils/productSorter";
+import { sortProducts } from "./utils/ProductSorter";
 
 // Create sample products
 const products = [
